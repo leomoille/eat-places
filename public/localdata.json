@@ -1,0 +1,49 @@
+[
+    {
+        "displayName": {
+            "text": "La Truffière",
+            "languageCode": "FR"
+        },
+        "formattedAddress": "4 Rue Blainville, 75005 Paris",
+        "shortFormattedAddress": "4 Rue Blainville, 75005 Paris",
+        "location": {
+            "latitude": 48.844562,
+            "longitude": 2.348937
+        },
+        "rating": 4.5,
+        "reviews": [
+            {
+                "relativePublishTimeDescription": "il y a 3 jours",
+                "text": {
+                    "text": "Super restaurant !"
+                },
+                "originalText": {
+                    "text": "Super restaurant !"
+                },
+                "rating": 4,
+                "authorAttribution": {
+                    "displayName": "John",
+                    "uri": "https://picsum.photos/200/200",
+                    "photoUri": "https://picsum.photos/200/300"
+                },
+                "publishTime": "2025-10-14T18:49:03.000Z"
+            },
+            {
+                "relativePublishTimeDescription": "il y a 6 jours",
+                "text": {
+                    "text": "Vraiment top !"
+                },
+                "originalText": {
+                    "text": "Vraiment top !"
+                },
+                "rating": 5,
+                "authorAttribution": {
+                    "displayName": "Pierre",
+                    "uri": "https://picsum.photos/200/200",
+                    "photoUri": "https://picsum.photos/200/300"
+                },
+                "publishTime": "2025-10-08T18:49:03.000Z"
+            }
+        ]
+    }
+]

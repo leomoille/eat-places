@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Eat Places
 
-## Getting Started
+Modernisation d'un projet de recherche de lieux où manger, pensé à l'origine pour une soutenance OpenClassrooms et désormais remis au goût du jour avec l'écosystème Next.js 15.
 
-First, run the development server:
+## Objectifs
+
+- Moderniser l'application en utilisant les versions récentes de React et Next.js.
+- Consolider l'intégration avec l'écosystème Google Cloud (Maps & Places).
+- Poser les bases d'une vitrine technique facilement déployable.
+
+## Stack & services
+
+- Next.js 15 (App Router, TypeScript)
+- shadcn/ui
+- Google Cloud Platform
+  - Google Maps JavaScript API
+  - Google Places API
+
+## Prérequis
+
+- Node.js 20 LTS recommandé (min. 18.18 pour Next.js 15)
+- npm 10+
+- Un compte Google Cloud avec une clé API Maps/Places (une fois l'intégration activée)
+
+## Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/leomoille/eat-places.git
+cd eat-places
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Créez ensuite un fichier `.env.local` :
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```env
+GOOGLE_MAPS_API_KEY=your-api-key
+GOOGLE_PLACES_API_KEY=your-api-key
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Commandes disponibles
 
-## Learn More
+- `npm run dev` : lance le serveur de développement Next.js (Turbopack).
+- `npm run build` : génère la version de production.
+- `npm start` : démarre l'application en production après un `build`.
 
-To learn more about Next.js, take a look at the following resources:
+## Ressources
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Documentation Next.js](https://nextjs.org/docs)
+- [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript?hl=fr)
+- [Google Places API](https://developers.google.com/maps/documentation/places/web-service?hl=fr)
